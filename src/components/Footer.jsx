@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="mx-auto mt-16 w-full max-w-6xl px-4 py-8 text-sm text-slate-500">
-      <p>CP5</p>
+    <footer className="w-full min-h-min border-t border-slate-200 bg-slate-100 py-4 text-center text-sm text-slate-500">
+      <p>GameStore &copy; {new Date().getFullYear()} - Todos os direitos reservados</p>
     </footer>
   )
 }

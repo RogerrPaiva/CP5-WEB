@@ -1,20 +1,22 @@
-import Footer from "../components/Footer"
-import Header from "../components/Header"
+import { Link } from 'react-router-dom'
 
-const Error = () => {
+function Error() {
   return (
-    <div>
-      <Header />
-      <main className="mx-auto mt-12 w-full max-w-6xl px-4">
-        <h1 className="text-4xl font-bold text-slate-950">
-          Pagina nao encontrada
-        </h1>
-        <p className="mt-3 text-lg text-slate-600">
-          Confira o menu para voltar para uma pagina disponivel.
+    <section className="mx-auto grid min-h-[60vh] max-w-3xl place-items-center px-5 py-16 text-center">
+      <div>
+        <p className="text-lg font-bold text-blue-600">Erro 404</p>
+        <h1 className="mt-3 text-4xl font-bold text-slate-900">Pagina nao encontrada</h1>
+        <p className="mx-auto mt-4 max-w-xl leading-7 text-slate-600">
+          A rota acessada nao existe. Volte para a pagina inicial.
         </p>
-      </main>
-      <Footer />
-    </div>
+        <Link
+          to="/"
+          className="mt-8 inline-block rounded-md bg-blue-600 px-5 py-3 font-bold text-white hover:bg-blue-700"
+        >
+          Voltar para Home
+        </Link>
+      </div>
+    </section>
   )
 }
 
