@@ -4,6 +4,7 @@ function Card({ jogo }) {
       <img
         src={jogo.imagem}
         alt={jogo.nome}
+        style={{ objectPosition: jogo.posicaoImagem || "center" }}
         className="h-52 w-full object-cover"
       />
 
