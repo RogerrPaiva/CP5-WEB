@@ -1,11 +1,13 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Card from "../components/Card";
 import thelast from "../assets/thelastofus.jpeg";
-import got from "../assets/got.jpeg"
-import spider from "../assets/spider.jpeg"
-import minecraft from "../assets/minecraft.jpeg"
-import fifa from "../assets/fifa.jpeg"
-import harry from "../assets/harry.jpeg"
+import got from "../assets/got.jpeg";
+import spider from "../assets/spider.jpeg";
+import minecraft from "../assets/minecraft.jpeg";
+import fifa from "../assets/fifa.jpeg";
+import harry from "../assets/harry.jpeg";
+
 function Produtos() {
   const jogos = [
     {
@@ -15,7 +17,7 @@ function Produtos() {
       preco: "R$ 199,90",
       imagem: thelast,
       descricao:
-        "Um jogo emocionante de ação e sobrevivência em um mundo pós-apocalíptico, com narrativa intensa e personagens marcantes."
+        "Um jogo emocionante de ação e sobrevivência em um mundo pós-apocalíptico, com narrativa intensa e personagens marcantes.",
     },
     {
       id: 2,
@@ -24,7 +26,7 @@ function Produtos() {
       preco: "R$ 249,90",
       imagem: got,
       descricao:
-        "Acompanhe Kratos e Atreus em uma jornada épica pela mitologia nórdica, enfrentando deuses, monstros e grandes desafios."
+        "Acompanhe Kratos e Atreus em uma jornada épica pela mitologia nórdica, enfrentando deuses, monstros e grandes desafios.",
     },
     {
       id: 3,
@@ -33,7 +35,7 @@ function Produtos() {
       preco: "R$ 299,90",
       imagem: spider,
       descricao:
-        "Explore a cidade, enfrente vilões e viva uma aventura cheia de ação controlando os heróis aracnídeos mais famosos."
+        "Explore a cidade, enfrente vilões e viva uma aventura cheia de ação controlando os heróis aracnídeos mais famosos.",
     },
     {
       id: 4,
@@ -42,7 +44,7 @@ function Produtos() {
       preco: "R$ 99,90",
       imagem: minecraft,
       descricao:
-        "Construa, explore e sobreviva em um mundo aberto feito de blocos, onde a criatividade do jogador é o principal limite."
+        "Construa, explore e sobreviva em um mundo aberto feito de blocos, onde a criatividade do jogador é o principal limite.",
     },
     {
       id: 5,
@@ -51,7 +53,7 @@ function Produtos() {
       preco: "R$ 279,90",
       imagem: fifa,
       descricao:
-        "Entre em campo com os maiores clubes e jogadores do mundo em partidas realistas, modos online e campeonatos emocionantes."
+        "Entre em campo com os maiores clubes e jogadores do mundo em partidas realistas, modos online e campeonatos emocionantes.",
     },
     {
       id: 6,
@@ -60,8 +62,8 @@ function Produtos() {
       preco: "R$ 229,90",
       imagem: harry,
       descricao:
-        "Viva sua própria história no universo mágico, explore Hogwarts, aprenda feitiços e enfrente mistérios perigosos."
-    }
+        "Viva sua própria história no universo mágico, explore Hogwarts, aprenda feitiços e enfrente mistérios perigosos.",
+    },
   ];
 
   return (
@@ -71,7 +73,6 @@ function Produtos() {
       <main className="min-h-screen bg-slate-100 px-6 py-12">
         <section className="mx-auto max-w-7xl">
           <div className="mb-10 text-center">
-
             <h1 className="mb-3 text-4xl font-bold text-slate-900 md:text-5xl">
               Produtos
             </h1>
@@ -89,6 +90,8 @@ function Produtos() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
