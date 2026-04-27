@@ -1,14 +1,15 @@
 import Home from '../pages/Home'
-import About from '../pages/About'
-import Contact from '../pages/Contact'
+import Error from '../pages/Error'
+import Produtos from '../pages/Produtos'
 import { Routes, Route } from 'react-router-dom'
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/produtos" element={<Produtos />} />
+      <Route path="/contato" element={<Error />} />
+      <Route path="*" element={<Error />} />
     </Routes>
   )
 }
